@@ -43,7 +43,7 @@ main .character .background{
 .content .vocationName{
   color: #fff;
   font-size: 48px;
-  font-family: "Secular One", sans-serif;
+  font-family: "MedievalSharp", sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
   width: 700px;
@@ -68,7 +68,7 @@ main .character .background{
   top: 0;
   right: 0;
   min-height: 100vh;
-  width: 180px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +82,8 @@ main .character .background{
   background: none;
   cursor: pointer;
   border-radius: 10%;
+  padding: 0px;
+  transition: ease-in 0.3s;
 }
 
 .buttons .button img{
@@ -90,5 +92,5 @@ main .character .background{
 
 .buttons .button.selected{
   transform: scale(1.2);
-  box-shadow: 0 0 7px #e2e60c;  
+  box-shadow: 0 0 10px #e2e60c;  
 }
