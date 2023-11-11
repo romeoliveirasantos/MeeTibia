@@ -1,0 +1,94 @@
+body{
+  background-color: #000;
+  overflow: hidden;
+}
+
+main::after{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 80vw;
+  background-color: linear-gradient(-233deg, #000 40%, rgba(0,0,0,0) 65%) no-repeat;
+}
+
+main .character{
+  display: none;
+  height: 100vh;
+}
+
+main .character.selected{
+  display: block;
+}
+
+main .character .background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content{
+  position: absolute;
+  top: 0;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 380px;
+  z-index: 1;
+}
+
+.content .vocationName{
+  color: #fff;
+  font-size: 48px;
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+.content .description{
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  line-height: 24px;
+}
+
+.content .icon{
+  background-image: url("../images/TibiaIcon.png");
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  margin-bottom: 35px;
+}
+
+.buttons{
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-height: 100vh;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.buttons .button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.buttons .button img{
+  border-radius: 0%;
+}
+
+.buttons .button.selected{
+  transform: scale(1.2);
+  box-shadow: 0 0 7px #e2e60c;  
+}
