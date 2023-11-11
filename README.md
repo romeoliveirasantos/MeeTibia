@@ -1,3 +1,5 @@
+![](https://www.tibiawiki.com.br/images/5/52/Tibia_Logo.png)
+
 #"MeeTibia"
 
 <p>MeeTibia é uma pagina com informações sobre as quatro vocações de personagens disponíveis no tibia.</p>
