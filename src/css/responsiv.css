@@ -34,7 +34,14 @@
   .buttons .button img{
     max-width: 60px;
   }
+  .buttons-spell{
+    display: none;
 }
+.spells{
+  display: none;
+}
+}
+
 
 @media(max-width:425px){
   main .character .imagem{
@@ -62,7 +69,15 @@
   .buttons .button img{
     max-width: 50px;
   }
+
+  .buttons-spell{
+    display: none;
 }
+.spells{
+  display: none;
+}
+}
+
 
 @media(max-width:425px){
   main .character .imagem{
@@ -97,5 +112,11 @@
   .character .description{
     font-size: 15px;
     width: 150px;
+  }
+  .buttons-spell{
+      display: none;
+  }
+  .spells{
+    display: none;
   }
 }
