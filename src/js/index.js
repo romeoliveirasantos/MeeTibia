@@ -46,9 +46,9 @@ function desselectButtonSpells() {
 
 buttonsSpells.forEach((buttonSpell, indice) => {
   buttonSpell.addEventListener("click", () => {
-    
+
     buttonSpell.classList.add("selected");
-    
+
     desselectButtonSpells();
     mostrarDescricao(indice);
   });
@@ -58,7 +58,7 @@ buttonsSpells.forEach((buttonSpell, indice) => {
 
 function mostrarDescricao(numButton) {
 
-  
+
   let descricaoAtual = document.getElementById('Description');
   descricaoAtual.style.display = 'flex';
 
@@ -73,13 +73,13 @@ function obterInformacoesFeitico(numButton) {
 
   const informacoesFeitico = [
     "Blood Rage",
+    "Fair Wound Cleansing",
     "Challenge",
     "Berserk",
-    "Fair Wound Cleansing",
     "Charge",
-    "Energy Strike",
     "Magic Shield",
     "Ultimate Healing",
+    "Energy Strike",
     "Strong Haste",
     "Rage of the Skies",
     "Divine Healing",
@@ -100,26 +100,30 @@ function obterInformacoesFeitico(numButton) {
 function ObterOutrasInfosFeitico(numButton) {
 
   const OutrasInfosFeitico = [
-    "Por 10 segundos, aumenta em 35% o melee skill fist fighting, axe fighting, club fighting e sword fighting do usuário,enquanto zera a capacidade de bloquear criaturas armaduras ainda reduzem o dano recebido, Além disso, aumenta todo o dano recebido pelo usuário em 15%. Remove todos os efeitos da magia Protector.",
-    "Chama a atenção das criaturas ao seu redor, fazendo com que passem a te atacar.",
-    "Acerta todos os oponentes que estiverem em um dos 9 square meter contando o seu em volta ou embaixo do knight que a usar, causando dano físico. Caso esteja equipado com uma arma encantada, parte do dano da magia será dano mágico.",
-    "Restaura uma porcentagem da vida do usuário a depender do seu 'Magic Level'.",
-    "O seu personagem irá sofrer um aumento de 90% em sua velocidade por 5 segundos.",
-    "Acerta o alvo causando dano elétrico.",
-    "Todo dano sofrido durante o efeito desta magia será reduzido de sua Mana ao invés de seu HP. O Magic Shield absorve apenas uma quantidade limitada de dano antes de quebrar e quando esta magia se quebra, o efeito do feitiço desaparece.",
-    "Cura uma quantidade grande de Vida.",
-    "Aumenta a velocidade durante 22 segundos.",
-    "Atinge 85 square meter contando o seu causando dano elétrico.",
-    "Magia de cura usando poderes sagrados dos Paladins.",
-    "Acerta o alvo causando dano sagrado.",
-    "Aumenta o distance skill do Paladin em 40% por 10 segundos.",
-    "Aumenta a velocidade dos Paladins em 80% por 10 segundos, porém, não é possível atacar ou usar qualquer magia de ataque.",
-    "Diz a direção em que o monstro diabólico mais próximo está, em relação a você, e dá uma idéia de distância.",
-    "Acerta o alvo causando dano físico.",
-    "Invoca uma criatura para servi-lo.",
-    "Cura o jogador alvo.",
-    "Cura todos os jogadores e criaturas sumonadas em volta de quem a usa.",
-    "Atinge 61 square meter contando o seu ao seu redor, causando dano de gelo.",
+    //Knight
+   /*1*/ "Por 10 segundos, aumenta em 35% o melee skill fist fighting, axe fighting, club fighting e sword fighting do usuário,enquanto zera a capacidade de bloquear criaturas armaduras ainda reduzem o dano recebido, Além disso, aumenta todo o dano recebido pelo usuário em 15%. Remove todos os efeitos da magia Protector.",
+   /*2*/ "Restaura uma porcentagem da vida do usuário a depender do seu 'Magic Level'.",
+   /*3*/"Chama a atenção das criaturas ao seu redor, fazendo com que passem a te atacar.",
+   /*4*/ "Acerta todos os oponentes que estiverem em um dos 9 square meter contando o seu em volta ou embaixo do knight que a usar, causando dano físico. Caso esteja equipado com uma arma encantada, parte do dano da magia será dano mágico.",
+    /*5*/"O seu personagem irá sofrer um aumento de 90% em sua velocidade por 5 segundos.",
+    //sorcerer
+    /*6*/"Todo dano sofrido durante o efeito desta magia será reduzido de sua Mana ao invés de seu HP. O Magic Shield absorve apenas uma quantidade limitada de dano antes de quebrar e quando esta magia se quebra, o efeito do feitiço desaparece.",
+    /*7*/"Cura uma quantidade grande de Vida.",
+    /*8*/"Cura uma quantidade grande de Vida.",
+    /*9*/"Aumenta a velocidade durante 22 segundos.",
+    /*10*/"Atinge 85 square meter contando o seu causando dano elétrico.",
+    //Paladin
+    /*11*/"Magia de cura usando poderes sagrados dos Paladins.",
+    /*12*/"Acerta o alvo causando dano sagrado.",
+    /*13*/"Aumenta o distance skill do Paladin em 40% por 10 segundos.",
+    /*14*/"Aumenta a velocidade dos Paladins em 80% por 10 segundos, porém, não é possível atacar ou usar qualquer magia de ataque.",
+    /*15*/"Diz a direção em que o monstro diabólico mais próximo está, em relação a você, e dá uma idéia de distância.",
+    //druid
+    /*16*/"Acerta o alvo causando dano físico.",
+    /*17*/"Invoca uma criatura para servi-lo.",
+    /*18*/"Cura o jogador alvo.",
+    /*19*/"Cura todos os jogadores e criaturas sumonadas em volta de quem a usa.",
+    /*20*/"Atinge 61 square meter contando o seu ao seu redor, causando dano de gelo.",
   ]
   return OutrasInfosFeitico[numButton] || "Informações não disponíveis";
 }
