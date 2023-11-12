@@ -107,7 +107,7 @@ main .character .background {
   justify-content: center;
   align-items: flex-end;
   gap: 10px;
-  z-index: 2;
+  z-index: 9;
   background-image: none;
 }
 
@@ -191,5 +191,5 @@ main .character .background {
 
 }
 .mana{
-  
+
 }
