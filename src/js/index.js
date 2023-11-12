@@ -47,9 +47,10 @@ function desselectButtonSpells() {
 buttonsSpells.forEach((buttonSpell, indice) => {
   buttonSpell.addEventListener("click", () => {
 
+    desselectButtonSpells();
     buttonSpell.classList.add("selected");
 
-    desselectButtonSpells();
+    
     mostrarDescricao(indice);
   });
 });
@@ -109,7 +110,7 @@ function ObterOutrasInfosFeitico(numButton) {
     //sorcerer
     /*6*/"Todo dano sofrido durante o efeito desta magia será reduzido de sua Mana ao invés de seu HP. O Magic Shield absorve apenas uma quantidade limitada de dano antes de quebrar e quando esta magia se quebra, o efeito do feitiço desaparece.",
     /*7*/"Cura uma quantidade grande de Vida.",
-    /*8*/"Cura uma quantidade grande de Vida.",
+    /*8*/"Acerta o alvo causando dano elétrico.",
     /*9*/"Aumenta a velocidade durante 22 segundos.",
     /*10*/"Atinge 85 square meter contando o seu causando dano elétrico.",
     //Paladin

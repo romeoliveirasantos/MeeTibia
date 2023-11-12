@@ -155,7 +155,7 @@ main .character .background {
 .descText {
   color: #fff;
   font-family: "MedievalSharp", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 20px;
 }
 
@@ -184,7 +184,7 @@ main .character .background {
   padding: 0 20px 0 45px;
 }
 
-.level{
+/* .level{
 
 }
 .life{
@@ -192,4 +192,4 @@ main .character .background {
 }
 .mana{
 
-}
+} */

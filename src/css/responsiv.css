@@ -4,6 +4,10 @@
     height: 300px;
     align-items: center;
   }
+  .spells {
+    display: flex;
+    margin-bottom: 50px;
+  }
   
 }
 @media(max-width:1024px){
@@ -12,7 +16,7 @@
     width: 500px;
     height: 300px;
     align-items: center;
-    margin-top: -68% !important;
+    margin-top: -70% !important;
     margin-right:0;
     margin-left:60px;
   }
