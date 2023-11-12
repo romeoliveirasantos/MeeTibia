@@ -1,34 +1,34 @@
-body{
+body {
   background-color: #000;
   overflow: hidden;
 }
 
-main::after{
+main::after {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
   min-height: 100vh;
   width: 80vw;
-  background-color: linear-gradient(-233deg, #000 40%, rgba(0,0,0,0) 65%) no-repeat;
+  background-color: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
 }
 
-main .character{
+main .character {
   display: none;
   height: 100vh;
 }
 
-main .character.selected{
+main .character.selected {
   display: block;
 }
 
-main .character .background{
+main .character .background {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.content{
+.content {
   position: absolute;
   top: 0;
   left: 120px;
@@ -40,7 +40,7 @@ main .character .background{
   z-index: 1;
 }
 
-.content .vocationName{
+.content .vocationName {
   color: #fff;
   font-size: 48px;
   font-family: "MedievalSharp", sans-serif;
@@ -49,13 +49,13 @@ main .character .background{
   width: 700px;
 }
 
-.content .description{
+.content .description {
   color: #fff;
   font-family: "Rubik", sans-serif;
   line-height: 24px;
 }
 
-.content .icon{
+.content .icon {
   background-image: url("../images/TibiaIcon.png");
   background-size: cover;
   height: 400px;
@@ -64,7 +64,7 @@ main .character .background{
 }
 
 
-.buttons{
+.buttons {
   position: fixed;
   top: 0;
   right: 0;
@@ -75,10 +75,10 @@ main .character .background{
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.buttons .button{
+.buttons .button {
   border: none;
   background: none;
   cursor: pointer;
@@ -87,16 +87,16 @@ main .character .background{
   transition: ease-in 0.3s;
 }
 
-.buttons .button img{
+.buttons .button img {
   border-radius: 0%;
 }
 
-.buttons .button.selected{
+.buttons .button.selected {
   transform: scale(1.2);
-  box-shadow: 0 0 10px #e2e60c;  
+  box-shadow: 0 0 10px #e2e60c;
 }
 
-.buttons-spell{
+.buttons-spell {
   position: absolute;
   top: 0;
   right: 150px;
@@ -107,10 +107,11 @@ main .character .background{
   justify-content: center;
   align-items: flex-end;
   gap: 10px;
-  z-index: 100;
+  z-index: 2;
   background-image: none;
 }
-.buttons-spell .button-spell{
+
+.buttons-spell .button-spell {
   border: none;
   background: none;
   cursor: pointer;
@@ -118,11 +119,13 @@ main .character .background{
   padding: 0px;
   transition: ease-in 0.3s;
 }
-.buttons-spell .button-spell.selected{
+
+.buttons-spell .button-spell.selected {
   transform: scale(1.2);
-  box-shadow: 0 0 10px #e2e60c;  
+  box-shadow: 0 0 10px #e2e60c;
 }
-.spells{
+
+.spells {
   margin-top: 30px;
   content: "Spells";
   font-size: 30px;
@@ -134,41 +137,59 @@ main .character .background{
   margin-right: 60px;
 }
 
-.spellDescription{
+.spellDescription {
+  width: 800px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
   display: none;
-  flex-wrap: wrap;
-  color: #fff;
-  font-size: 30px;
+  flex-direction: column;
   position: absolute;
-  width: 40vw;
-  height: auto;
-  height: 50vh;
-  justify-content:center;
-  left: 170%;
-  background-color: rgba(0,0,0,0.3);
-}
-.show{
-  display: flex;
-  flex-wrap: wrap;
-  color: #fff;
-  font-size: 30px;
-  position: absolute;
-  width: 40vw;
-  height: auto;
-  height: 50vh;
-  justify-content:center;
-  left: 170%;
-  background-color: rgba(0,0,0,0.3);
-}
-.descText{
-  margin-top: 20px;
-  font-family: "MedievalSharp";
-  display: none;
+  z-index: 3;
+  margin: -35% 0 0 45%;
+  align-items: center;
+  gap: 30px;
+  word-wrap: break-word;
+  /* Adiciona esta linha para permitir que o texto quebre entre palavras */
 }
 
-.descTextShow{
+.descText {
+  color: #fff;
+  font-family: "MedievalSharp", sans-serif;
+  font-size: 60px;
   margin-top: 20px;
-  font-family: "MedievalSharp";
+}
+
+.info {
+  color: #fff;
+  font-family: "rubik", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  transition: ease-in 0.3s;
+  justify-content: center;
+  padding: 0 20px 0 45px;
+}
+
+.LML{
+  color: #fff;
+  font-family: "rubik", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px 0 45px;
+}
+
+.level{
+
+}
+.life{
+
+}
+.mana{
+  
 }
